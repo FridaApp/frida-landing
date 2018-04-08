@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+Mixins
+--------------------------------------------------------------*/
+
+@mixin fullscreen {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin onlyDesktop {
+  @include mobile {
+    display: none;
+  }
+}
+
+@mixin onlyMobile {
+  @include fromTablet {
+    display: none;
+  }
+}
+
+@mixin center($direction, $position: 'absolute') {
+  @if $direction == x {
+    left: 50%;
+    position: if($position == relative, relative, absolute);
+    transform: translateX(-50%);
+  } @else if $direction == y {
+    position: if($position == relative, relative, absolute);
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $direction == xy {
+    left: 50%;
+    position: if($position == relative, relative, absolute);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*--------------------------------------------------------------
+Functions
+--------------------------------------------------------------*/
+
+@function em($px, $base: $base-font-size) {
+  @return ($px / $base) * 1em;
+}
+
+@function rem($px, $base: $base-font-size) {
+  @return ($px / $base) * 1rem;
+}
