@@ -38,16 +38,22 @@
     background-color: $color-white;
     border: 0;
     color: $color-red;
+    cursor: pointer;
     font-family: $font-roboto;
     font-size: 14px;
     height: 45px;
     margin-top: 30px;
+    transition: opacity 0.15s ease-in-out;
     width: 50%;
 
     @include small {
       margin-top: 0;
       padding: 0 30px;
       width: initial;
+    }
+    
+    &:hover {
+      color: rgba($color-red, 0.8);
     }
   }
 
