@@ -1,16 +1,16 @@
-import Default from './Default'
+import Subscribe from './Subscribe'
 
 class App {
-  constructor () {
+  constructor() {
     this._init()
   }
 
   _init() {
     console.log('App loaded!')
-    this._default = new Default()
+    this.subscribe = new Subscribe()
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener('DOMContentLoaded', function() {
   const app = new App()
 })

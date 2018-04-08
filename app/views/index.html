@@ -166,10 +166,11 @@
     <div class="container">
       <h2 class="subscribe__headline">Tenez-moi au courant de la sortie !</h2>
       <p class="subscribe__text">Pas de spams, promis ! Nous ne vous enverrons qu'un seul et unique mail : quand notre produit sera disponible.</p>
-      <form class="subscribe__form">
-        <input class="subscribe__email" type="mail" placeholder="Adresse e-mail">
+      <form class="subscribe__form" id="subscribe-form">
+        <input class="subscribe__email" type="email" name="email" id="email-input" placeholder="Adresse e-mail" required>
         <input class="subscribe__submit" type="submit" value="Envoyer">
       </form>
+      <p class="subscribe__subscribed">Vous êtes inscris à la liste !</p>
     </div>
   </section>
   <!--<script src="js/vendors.js"></script>-->

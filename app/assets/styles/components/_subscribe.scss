@@ -24,4 +24,8 @@
   &__text {
     @extend .body-copy;
   }
+
+  &__subscribed {
+    display: none;
+  }
 }
