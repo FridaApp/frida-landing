@@ -1,0 +1,29 @@
+.perks {
+  padding: 175px 0;
+
+  &__headline {
+    @extend .headline;
+    color: $color-blue;
+    margin-bottom: rem(30px);
+
+    span {
+      color: $color-red;
+    }
+  }
+
+  &__perk {
+    @extend .body-copy;
+    color: $color-gray;
+  }
+
+  &__icon {
+    width: 100%;
+  }
+
+  &__spacer {
+    background-color: $color-blue;
+    height: 1px;
+    width: 100px;
+    margin-bottom: 100px;
+  }
+}
