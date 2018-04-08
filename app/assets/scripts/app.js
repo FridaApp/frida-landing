@@ -6,7 +6,6 @@ class App {
   }
 
   _init() {
-    console.log('App loaded!')
     this.subscribe = new Subscribe()
     var scroll = new SmoothScroll('a[href*="#"]')
   }
