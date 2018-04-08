@@ -1,2 +1,50 @@
 .hero {
+  height: 100vh;
+  &__headline {
+    @extend .headline;
+    color: $color-blue;
+    margin-bottom: rem(30px);
+
+    span {
+      color: $color-red;
+    }
+  }
+
+  &__logo {
+    @extend .headline;
+    color: $color-blue;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+  }
+
+  &__tagline {
+    @extend .body-copy;
+    color: $color-gray;
+  }
+
+  &__cta {
+    @extend .body-copy;
+    align-items: center;
+    color: $color-blue;
+    cursor: pointer;
+    display: flex;
+    margin-top: 60px;
+    img {
+      padding-right: 10px;
+    }
+  }
+
+  &__shape {
+    background-color: red;
+    height: 50vw;
+    position: absolute;
+    top: 0;
+    transform: translate(25%, -25%);
+    right: 0;
+    width: 50vw;
+  }
+
+  .centered-container {
+    @include center(y);
+  }
 }
