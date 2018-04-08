@@ -1,0 +1,22 @@
+.subscribe {
+  background-color: $color-red;
+  color: $color-white;
+  padding: 64px 0;
+
+  &__email {
+    background-color: transparent;
+    border: 1px solid $color-white;
+    font-size: rem(14px);
+    height: 45px;
+    padding: 0 0 0 20px;
+    width: 340px;
+  }
+
+  &__headline {
+    @extend .headline;
+  }
+
+  &__text {
+    @extend .body-copy;
+  }
+}
