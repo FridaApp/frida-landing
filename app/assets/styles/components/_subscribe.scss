@@ -31,10 +31,16 @@
     background-color: $color-white;
     border: 0;
     color: $color-red;
+    cursor: pointer;
     font-family: $font-roboto;
     font-size: 14px;
     height: 45px;
     padding: 0 30px;
+    transition: opacity 0.15s ease-in-out;
+
+    &:hover {
+      color: rgba($color-red, 0.8);
+    }
   }
 
   &__headline {
