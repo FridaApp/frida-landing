@@ -12,10 +12,15 @@
     background-color: transparent;
     border: 1px solid $color-white;
     color: $color-white;
+    font-family: $font-roboto;
     font-size: rem(14px);
     height: 45px;
     padding: 0 0 0 20px;
-    width: 340px;
+    width: 100%;
+
+    @include small {
+      width: 340px;
+    }
 
     &::placeholder {
       color: $color-white;
@@ -24,7 +29,9 @@
 
   &__form {
     align-items: center;
-    display: inline-flex;
+    @include small {
+      display: inline-flex;
+    }
   }
 
   &__submit {
@@ -34,7 +41,14 @@
     font-family: $font-roboto;
     font-size: 14px;
     height: 45px;
-    padding: 0 30px;
+    margin-top: 30px;
+    width: 50%;
+
+    @include small {
+      margin-top: 0;
+      padding: 0 30px;
+      width: initial;
+    }
   }
 
   &__headline {
@@ -56,6 +70,10 @@
     background: #ffffff;
     display: block;
     height: 208px;
-    width: 433px;
+    width: 100%;
+
+    @include small {
+      width: 433px;
+    }
   }
 }

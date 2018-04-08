@@ -1,5 +1,9 @@
 .perks {
-  padding: 175px 0;
+  padding: 75px 0;
+
+  @include medium {
+    padding: 175px 0;
+  }
 
   &__headline {
     @extend .headline;
@@ -24,6 +28,10 @@
     background-color: $color-blue;
     height: 1px;
     width: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+
+    @include medium {
+      margin-bottom: 100px;
+    }
   }
 }
