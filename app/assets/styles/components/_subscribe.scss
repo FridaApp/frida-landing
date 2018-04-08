@@ -2,6 +2,11 @@
   background-color: $color-red;
   color: $color-white;
   padding: 64px 0;
+  text-align: center;
+
+  .container {
+    max-width: 540px;
+  }
 
   &__email {
     background-color: transparent;

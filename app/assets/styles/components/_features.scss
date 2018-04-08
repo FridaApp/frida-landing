@@ -1,6 +1,22 @@
 .features {
-  background-color: $color-blue; // change to another container
-  padding: 80px 0;
+  position: relative;
+
+  &::before {
+    background-color: $color-blue;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    background-color: $color-blue;
+    padding: 100px 0;
+    position: relative;
+  }
 
   &__headline {
     @extend .headline;
@@ -11,7 +27,7 @@
       content: '';
       display: block;
       height: 1px;
-      margin: 16px 0 60px;
+      margin: 30px 0 60px;
       width: 100px;
     }
   }
