@@ -59,6 +59,10 @@
 
   &__headline {
     @extend .headline;
+    font-size: rem(30px);
+    @include small {
+      font-size: rem(32px);
+    }
   }
 
   &__text {
