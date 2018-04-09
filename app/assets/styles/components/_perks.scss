@@ -18,10 +18,30 @@
   &__perk {
     @extend .body-copy;
     color: $color-gray;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @include small {
+      margin-bottom: 50px;
+    }
+
+    @include medium {
+      margin-bottom: 0;
+    }
   }
 
   &__icon {
-    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+    width: 20%;
+
+    @include small {
+      width: 10%;
+    }
+
+    @include medium {
+      width: 100%;
+    }
   }
 
   &__spacer {
