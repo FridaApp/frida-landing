@@ -51,7 +51,7 @@
       padding: 0 30px;
       width: initial;
     }
-    
+
     &:hover {
       color: rgba($color-red, 0.8);
     }
@@ -75,7 +75,7 @@
     margin: 60px auto 0;
     background: #ffffff;
     display: block;
-    height: 208px;
+    height: auto;
     width: 100%;
 
     @include small {
