@@ -19,6 +19,10 @@
       height: 40px;
     }
 
+    @include small {
+      margin-bottom: 45vh;
+    }
+
     @include medium {
       margin-bottom: 20vh;
     }
@@ -45,18 +49,23 @@
 
   &__shape {
     display: none;
-    height: 45vw;
+    height: 60vw;
     position: absolute;
     top: 0;
     right: 0;
-    width: 45vw;
+    width: 60vw;
 
     video {
       width: 100%;
     }
 
-    @include medium {
+    @include small {
       display: block;
+    }
+
+    @include medium {
+      height: 45vw;
+      width: 45vw;
     }
   }
 
