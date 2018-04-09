@@ -34,5 +34,10 @@ body {
 .container {
   margin: auto;
   max-width: 1200px;
+  padding: 0 20px;
   width: 90%;
+
+  @include medium {
+    padding: 0;
+  }
 }
