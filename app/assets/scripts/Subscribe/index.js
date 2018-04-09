@@ -5,6 +5,7 @@ class Subscribe {
   constructor() {
     this.$form = document.getElementById('subscribe-form')
     this.$email = document.getElementById('email-input')
+    this.$button = document.querySelector('.subscribe__submit')
     this.$subscribed = document.querySelector('.subscribe__subscribed')
     this.init()
   }
@@ -22,6 +23,7 @@ class Subscribe {
 
   handleFormSubmit(e) {
     e.preventDefault()
+    this.$button.setAttribute('disabled', 'disabled')
     const url = new URL(SCRIPT_URL)
     const params = { email: this.$email.value, timestamp: Date.now() }
     Object.keys(params).forEach(key =>
