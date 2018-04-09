@@ -1,8 +1,7 @@
-const APP_SRC  = 'app'
+const APP_SRC = 'app'
 const APP_DEST = 'build'
 
 module.exports = {
-
   appSrc: APP_SRC,
   appDest: APP_DEST,
 
@@ -32,17 +31,17 @@ module.exports = {
           prefix: '.svg--%s',
           sprite: 'sprite.svg',
           example: false
-        },
+        }
       }
     }
   },
 
   images: {
-    src: APP_SRC + '/assets/images/**/*.{jpg,png,gif,svg}',
+    src: APP_SRC + '/assets/images/**/*.{jpg,png,gif,svg,mp4,webm}',
     dest: APP_DEST + '/img/',
     opts: {
       progressive: true,
-      svgoPlugins: [{removeViewBox: false}]
+      svgoPlugins: [{ removeViewBox: false }]
     }
   },
 
