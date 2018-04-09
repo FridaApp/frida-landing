@@ -12,10 +12,12 @@
   }
 
   &__logo {
-    @extend .headline;
-    color: $color-blue;
     margin-top: 5vh;
     margin-bottom: 10vh;
+
+    img {
+      height: 50px;
+    }
 
     @include medium {
       margin-bottom: 20vh;
