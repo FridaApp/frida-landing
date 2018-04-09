@@ -42,14 +42,16 @@
   }
 
   &__shape {
-    background-color: red;
     display: none;
-    height: 50vw;
+    height: 40vw;
     position: absolute;
     top: 0;
-    transform: translate(25%, -25%);
     right: 0;
-    width: 50vw;
+    width: 40vw;
+
+    video {
+      width: 100%;
+    }
 
     @include medium {
       display: block;
