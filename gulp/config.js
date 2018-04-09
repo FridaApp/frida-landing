@@ -37,7 +37,9 @@ module.exports = {
   },
 
   images: {
-    src: APP_SRC + '/assets/images/**/*.{jpg,png,gif,svg,mp4,webm}',
+    src:
+      APP_SRC +
+      '/assets/images/**/*.{jpg,png,gif,svg,mp4,webm,ico,xml,webmanifest}',
     dest: APP_DEST + '/img/',
     opts: {
       progressive: true,
