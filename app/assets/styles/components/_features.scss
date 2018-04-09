@@ -1,5 +1,10 @@
 .features {
+  margin-top: 55px;
   position: relative;
+
+  @include small {
+    margin-top: 0;
+  }
 
   &::before {
     background-color: $color-blue;
